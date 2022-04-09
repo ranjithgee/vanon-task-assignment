@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+}
+
+.top_banner_section{
+    background-image: url('../assets/banner-bg.png');
+    height: 730px;
+    background-position: center;
+}
+
+.chat_quote_btn{
+    background-color: #2e8f16;
+    padding: 6px 35px;
+    border-radius: 20px;
+    font-size: 17px;
+}
+
+.row{
+    margin: 0;
+}
+.content_wrapper{
+    margin-top: 100px;
+}
+.content_wrapper .container,.review_box .container{
+    max-width: 1730px;
+}
+.menu_box ul li:nth-child(5) a{
+    color: #2e8f16;
+}
+
+.menu_box ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.content_wrapper .main_title{
+    font-weight: 600;
+}
+
+.content_wrapper .sub_title{
+    font-weight: 500;
+}
+
+.content_wrapper .translate_btn_box{
+    margin-top: 100px;
+}
+
+.translate_btn_box button:hover{
+    color: white;
+}
+
+.translate_btn_box button{
+    background-color: #417489;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 50px;
+    font-size: 24px;
+}
+
+.review_item p{
+    color: gray;
+}
