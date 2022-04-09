@@ -2,6 +2,39 @@ body{
     margin: 0;
 }
 
+.review_carousel .owl-item img{
+    width: auto!important;
+}
+
+.review_carousel,.review_carousel2{
+    position: relative;
+}
+
+.review_carousel .owl-nav,.review_carousel2 .owl-nav{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 32%;
+    width: 100%;
+}
+
+.review_carousel .owl-nav button:hover,.review_carousel2 .owl-nav button:hover{
+    background: none!important;
+}
+
+.review_carousel .owl-nav button.owl-prev,.review_carousel2 .owl-nav button.owl-prev{
+    position: relative;
+    right: 48px;
+}
+
+.review_carousel .owl-nav button.owl-next,.review_carousel2 .owl-nav button.owl-next{
+    position: relative;
+    left: 46px;
+}
+.review_carousel .owl-nav img,.review_carousel2 .owl-nav img{
+    width: 45%;
+}
+
 .top_banner_section{
     background-image: url('../assets/banner-bg.png');
     height: 730px;
@@ -96,7 +129,67 @@ footer .contact_us_btn{
     transition: all .6s;
 }
 
+@media only screen and (min-width:1270px) and (max-width:1366px) {
+    .menu_box ul li{
+        font-size: 13px!important;
+    }
+    .chat_quote_btn{
+        font-size: 12px!important;
+    }
+    .content_wrapper .main_title{
+        font-size: 33px!important;
+    }
+    .content_wrapper .container{
+        max-width: 1206px!important;
+    }
+    .top_banner_section{
+        height: 596px;
+    }
+    .review_box .container{
+        padding-left: 32px!important;
+        padding-right: 32px!important;
+    }
+}
+
+@media only screen and (min-width:1020px) and (max-width:1279px) {
+    .menu_box ul li{
+        font-size: 13px!important;
+    }
+    .chat_quote_btn{
+        font-size: 12px!important;
+    }
+    .content_wrapper .main_title{
+        font-size: 27px!important;
+    }
+    .top_banner_section{
+        height: 596px;
+    }
+    .review_box{
+        font-size: 12px;
+    }
+    .review_box .container{
+        padding-left: 32px!important;
+        padding-right: 32px!important;
+    }
+    .review_box h6 {
+        font-size: 13px!important;
+    }
+    .review_box h2{
+        font-size: 20px!important;
+    }
+    .star_box,.google_logo{
+        margin: 0!important;
+    }
+}
+
 @media only screen and (min-width:300px) and (max-width:600px) {
+    .review_box .row > .col-12{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .google_logo.trust{
+        margin: 0!important;
+    }
     header.desktop{
         display: none;
     }
