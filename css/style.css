@@ -6,6 +6,7 @@ body{
     background-image: url('../assets/banner-bg.png');
     height: 730px;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .chat_quote_btn{
@@ -13,6 +14,8 @@ body{
     padding: 6px 35px;
     border-radius: 20px;
     font-size: 17px;
+    font-weight: 500;
+    box-shadow: 0 2px 10px 4px rgb(0 0 0/10%);
 }
 
 .row{
@@ -45,7 +48,7 @@ body{
     margin-top: 100px;
 }
 
-.translate_btn_box button:hover{
+.translate_btn_box button:hover,footer .contact_us_btn:hover{
     color: white;
 }
 
@@ -60,4 +63,69 @@ body{
 
 .review_item p{
     color: gray;
+}
+
+footer{
+    background-color: #d9e5f3;
+    color: #427389;
+}
+
+.company_logo_box img{
+    width: 36%;
+}
+
+footer .contact_us_btn{
+    padding: 8px 30px;
+    border-radius: 30px;
+    background-color: #417489;
+    color: white;
+}
+
+.menu_bar_box{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_bar_box span{
+    display: inline-block;
+    height: 4px;
+    width: 30px;
+    border-radius: 10px;
+    background-color: black;
+    margin: 2px 0;
+}
+
+@media only screen and (min-width:300px) and (max-width:600px) {
+    header.desktop{
+        display: none;
+    }
+    header.mobile{
+        display: block!important;
+    }
+    .top_banner_section{
+        height: 526px!important;
+    }
+    footer > h1{
+        font-size: 20px;
+    }
+    .content_wrapper .main_title{
+        font-size: 22px!important;
+        margin-bottom: 15px;
+        padding: 0 15px;
+    }
+    .content_wrapper .sub_title{
+        font-size: 15px!important;
+        padding: 0 15px;
+    }
+    .content_wrapper {
+        margin-top: 70px;
+    }
+    .content_wrapper .translate_btn_box{
+        margin-top: 60px;
+        padding: 0 15px;
+    }
+    .bottom_sub_title{
+        padding: 0 15px;
+    }
+
 }
