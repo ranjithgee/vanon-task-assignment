@@ -1,0 +1,8 @@
+ui-system-test:
+==============================
+1. Convert these three folds to HTML & with responsive. In a mockup tool, redesign three folds based on your own creativity.
+2. The components are listed in the attachment.
+
+        
+
+					/****** ALL THE BEST ******/
