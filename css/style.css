@@ -40,6 +40,7 @@ body{
     height: 730px;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .chat_quote_btn{
@@ -129,6 +130,137 @@ footer .contact_us_btn{
     transition: all .6s;
 }
 
+.review_item .content_item_title{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.review_item.google .content h6 span{
+    color: orange;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.review_item .content h6 span{
+    color: green;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.mobile_sidebar.active{
+    transform: translateX(0%);
+    animation: FadeLeft .7s;
+}
+
+.mobile_sidebar{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    background-color: white;
+    z-index: 999;
+}
+.content_bar{
+    margin-top: 50px;
+}
+.content_bar ul li:not(li:last-child){
+    background-color: #e8f0fe;
+    width: 90%;
+    color: black;
+    border-radius: 7px;
+}
+.content_bar ul li:last-child{
+    padding: 5px;
+}
+.content_bar ul li{
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 10px;
+}
+.closebar{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.closebar span{
+    display: inline-block;
+    height: 4px;
+    width: 30px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.closebar span:first-child{
+    position: relative;
+    top: 4px;
+    transform: rotate(45deg);
+}
+
+.closebar span:last-child{
+    transform: rotate(-45deg);
+}
+
+@keyframes FadeLeft {
+
+    from{
+        opacity: 0;
+        transform: translate(0,100%,0);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media only screen and (min-width:1600px) and (max-width:1750px) {
+    .menu_box ul li{
+        font-size: 18px!important;
+    }
+    .chat_quote_btn{
+        font-size: 18px!important;
+    }
+    .content_wrapper .main_title{
+        font-size: 33px!important;
+        margin-bottom: 17px;
+    }
+    .content_wrapper .container{
+        max-width: 1606px!important;
+    }
+    .top_banner_section{
+        height: 596px;
+    }
+    .review_box .container{
+        padding-left: 32px!important;
+        padding-right: 32px!important;
+    }
+}
+
+@media only screen and (min-width:1367px) and (max-width:1600px) {
+    .menu_box ul li{
+        font-size: 15px!important;
+    }
+    .chat_quote_btn{
+        font-size: 15px!important;
+    }
+    .content_wrapper .main_title{
+        font-size: 33px!important;
+        margin-bottom: 20px;
+    }
+    .content_wrapper .container{
+        max-width: 1406px!important;
+    }
+    .top_banner_section{
+        height: 596px;
+    }
+    .review_box .container{
+        padding-left: 32px!important;
+        padding-right: 32px!important;
+    }
+}
+
 @media only screen and (min-width:1270px) and (max-width:1366px) {
     .menu_box ul li{
         font-size: 13px!important;
@@ -138,6 +270,7 @@ footer .contact_us_btn{
     }
     .content_wrapper .main_title{
         font-size: 33px!important;
+        margin-bottom: 20px;
     }
     .content_wrapper .container{
         max-width: 1206px!important;
@@ -149,6 +282,9 @@ footer .contact_us_btn{
         padding-left: 32px!important;
         padding-right: 32px!important;
     }
+    .content_wrapper .sub_title{
+        font-size: 15px!important;
+    }
 }
 
 @media only screen and (min-width:1020px) and (max-width:1279px) {
@@ -159,7 +295,13 @@ footer .contact_us_btn{
         font-size: 12px!important;
     }
     .content_wrapper .main_title{
-        font-size: 27px!important;
+        font-size: 29px!important;
+        margin-bottom: 15px!important;
+        padding: 0 15px;
+    }
+    .content_wrapper .sub_title{
+        font-size: 14px!important;
+        padding: 0 15px;
     }
     .top_banner_section{
         height: 596px;
@@ -180,12 +322,98 @@ footer .contact_us_btn{
     .star_box,.google_logo{
         margin: 0!important;
     }
+    nav > .row > .col-4{
+        width: 23%!important;
+    }
+    nav > .row > .col-8{
+        width: 76%!important;
+    }
+    .menu_box ul li{
+        margin: 0 14px!important;
+    }
+    .content_wrapper .translate_btn_box{
+        padding: 0 15px;
+        font-size: 18px;
+    }
+    .bottom_sub_title{
+        padding: 0 15px;
+    }
+    .bottom_sub_title h5{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:1019px) {
+    .top_banner_section{
+        height: 590px;
+    }
+    .mobile_sidebar{
+        display: block!important;
+    }
+    header.desktop{
+        display: none;
+    }
+    header.mobile{
+        display: block!important;
+    }
+    .review_box .row > .col-12{
+        width: 100%!important;
+    }
+    .review_box .row > .col-12{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .review_item{
+        text-align: start;
+    }
+    .content_wrapper .main_title{
+        font-size: 24px!important;
+        margin-bottom: 15px;
+        padding: 0 15px;
+    }
+    .content_wrapper .sub_title{
+        font-size: 15px!important;
+        padding: 0 15px;
+    }
+    .content_wrapper .translate_btn_box{
+        margin-top: 60px;
+        padding: 0 15px;
+    }
+    .bottom_sub_title{
+        padding: 0 15px;
+    }
+    .content_bar ul li:not(li:last-child){
+        width: 40%;
+    }
 }
 
 @media only screen and (min-width:300px) and (max-width:600px) {
     .review_box .row > .col-12{
+        width: 100%!important;
+    }
+    .mobile_sidebar{
+        display: block!important;
+    }
+    .review_item{
+        text-align: start;
+    }
+    .review_box .row > .col-12{
         text-align: center;
         margin-bottom: 30px;
+    }
+    .company_logo_box img{
+        width: 96%;
+    }
+    .number_box{
+        flex-wrap: wrap;
+    }
+    .number_box h6{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 13px;
+    }
+    .footer_title2{
+        margin-bottom: 25px;
     }
     .google_logo.trust{
         margin: 0!important;
@@ -203,7 +431,7 @@ footer .contact_us_btn{
         font-size: 20px;
     }
     .content_wrapper .main_title{
-        font-size: 22px!important;
+        font-size: 24px!important;
         margin-bottom: 15px;
         padding: 0 15px;
     }
@@ -220,6 +448,9 @@ footer .contact_us_btn{
     }
     .bottom_sub_title{
         padding: 0 15px;
+    }
+    .translate_btn_box button{
+        font-size: 14px;
     }
 
 }

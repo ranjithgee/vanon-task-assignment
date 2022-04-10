@@ -12,7 +12,7 @@ $('.review_carousel').owlCarousel({
         0:{
             items:1
         },
-        768:{
+        601:{
             items:2
         },
         1269:{
@@ -35,11 +35,20 @@ $('.review_carousel2').owlCarousel({
         0:{
             items:1
         },
-        768:{
+        601:{
             items:2
         },
         1269:{
             items:3
         }
     }
+})
+
+$(document).ready(function(){
+    $('.menu_bar_box').on('click',function(){
+        $('.mobile_sidebar').addClass('active');
+    })
+    $('.closebar').on('click',function(){
+        $('.mobile_sidebar').removeClass('active');
+    })
 })
