@@ -118,6 +118,7 @@ footer .contact_us_btn{
 .menu_bar_box{
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .menu_bar_box span{
@@ -184,6 +185,7 @@ footer .contact_us_btn{
     flex-direction: column;
     margin-top: 40px;
     margin-left: 20px;
+    cursor: pointer;
 }
 .closebar span{
     display: inline-block;
