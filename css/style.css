@@ -171,6 +171,7 @@ footer .contact_us_btn{
     width: 90%;
     color: black;
     border-radius: 7px;
+    cursor: pointer;
 }
 .content_bar ul li:last-child{
     padding: 5px;
